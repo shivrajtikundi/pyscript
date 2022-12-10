@@ -10,7 +10,7 @@ def runAnalysis(userdoc,col_log):
 		"team_id":str(userdoc["team_id"]),
 		"limit":"20"
 	}
-	response = requests.post(url='https://pyaquapi.101logix.com/analysis', json=data)
+	response = requests.post(url='https://py.reviewanalytics.io/analysis', json=data)
 	response_json = response.json()
 	get_status_code = response_json.get('status_code')
 	
